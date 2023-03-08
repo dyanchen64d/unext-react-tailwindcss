@@ -43,7 +43,7 @@ function NavbarContent() {
 
   return (
     <div className="nav-bg w-full h-full pt-[54px] lg:pt-[32px] pb-[90px] overflow-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
-      <div className="flex justify-center">
+      <div className="hidden lg:flex justify-center">
         <HeaderUnext />
       </div>
       <div className=" mb-[16px] lg:pt-[32px]">
