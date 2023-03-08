@@ -1,10 +1,7 @@
 import React, { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { closeNav } from '../store/navSlice';
-
-const NavbarContent = () => {
-  return <div className="nav-bg w-full h-full"></div>;
-};
+import NavbarContent from './NavbarContent';
 
 function Navbar() {
   const { isOpen } = useSelector((state) => state.nav);
@@ -18,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <>
+    <nav>
       <div
         className={`fixed lg:hidden top-0 left-0 w-screen h-screen bg-yellow-500 nav-glassmorphism ${
           isOpen ? '' : 'hidden'
@@ -33,10 +30,10 @@ function Navbar() {
       >
         <NavbarContent />
       </div>
-      <div className=" hide lg:fixed top-0 left-0 h-full w-[256px] ">
+      <div className=" hidden lg:fixed top-0 left-0 h-full w-[256px] ">
         <NavbarContent />
       </div>
-    </>
+    </nav>
   );
 }
 
