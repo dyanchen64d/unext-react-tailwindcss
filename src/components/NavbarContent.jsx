@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import NavMainItem from './NavMainItem';
 import NavSubItem from './NavSubItem';
 
+import HeaderUnext from '../assets/HeaderUnextSvg.jsx';
 import NavUnextIcon from '../assets/NavUnextIcon';
 import NavHelpIcon from '../assets/NavHelpIcon';
 import NavHomeIcon from '../assets/NavHomeIcon';
@@ -25,19 +26,30 @@ const videosItems = [
   '舞台・演劇',
 ];
 
+const bookItems = ['読み放題雑誌', 'マンガ', 'ラノベ', '書籍'];
+
 function NavbarContent() {
   const [videoIsOpen, setVideoIsOpen] = useState(true);
+
+  const [bookIsOpen, setBookIsOpen] = useState(true);
 
   const videoItemClickHandler = () => {
     setVideoIsOpen(!videoIsOpen);
   };
 
+  const bookItemClickHandler = () => {
+    setBookIsOpen(!bookIsOpen);
+  };
+
   return (
-    <div className="nav-bg w-full h-full pt-[54px] pb-[90px] overflow-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
-      <div className=" mb-[16px]">
+    <div className="nav-bg w-full h-full pt-[54px] lg:pt-[32px] pb-[90px] overflow-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
+      <div className="flex justify-center">
+        <HeaderUnext />
+      </div>
+      <div className=" mb-[16px] lg:pt-[32px]">
         <div className="w-full flex flex-col items-center mb-[38px]">
           <a href="#">
-            <div className=" bg-nav-register text-white w-[200px] h-[48px] rounded-lg flex items-center justify-center text-lg font-bold">
+            <div className=" bg-nav-register text-white w-[200px] h-[48px] rounded-lg flex items-center justify-center text-lg font-bold mt-[8px]">
               無料でお試し
             </div>
           </a>
@@ -82,9 +94,25 @@ function NavbarContent() {
             </li>
           ))}
         </ul>
-        <li className=" list-none mt-2 mb-4">
-          <NavMainItem title="ブック" icon={<NavBookIcon />} />
+        <li className=" list-none mt-2 mb-4" onClick={bookItemClickHandler}>
+          <NavMainItem
+            title="ブック"
+            icon={<NavBookIcon />}
+            isOpen={bookIsOpen}
+          />
         </li>
+        <ul
+          className={`overflow-hidden transition-height ease-in-out duration-300 `}
+          style={{
+            height: bookIsOpen ? `${bookItems.length * 48}px` : '0px',
+          }}
+        >
+          {bookItems.map((v, idx) => (
+            <li className=" list-none mb-2" key={idx}>
+              <NavSubItem title={v} />
+            </li>
+          ))}
+        </ul>
         <li className=" list-none mt-2 mb-4">
           <NavMainItem title="その他♡" icon={<NavOtherIcon />} />
         </li>

@@ -40,7 +40,7 @@ function Header() {
       >
         <HiMenu color="white" fontSize="28px" />
       </div>
-      <a href="#" className=" scale-70 lg:scale-100">
+      <a href="#" className=" scale-70 lg:hidden">
         <HeaderUnext />
       </a>
       <div className=" absolute top-0 right-0 search-wrapper w-[56px] h-[56px] flex justify-center items-center">
