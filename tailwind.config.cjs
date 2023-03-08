@@ -11,6 +11,9 @@ module.exports = {
         'nav-register': 'rgb(0, 128, 222)',
         'nav-login': 'rgba(255, 255, 255, 0.05)',
       },
+      transitionProperty: {
+        height: 'height',
+      },
     },
     screens: {
       lg: '1025px',
