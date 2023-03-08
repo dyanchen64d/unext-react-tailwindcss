@@ -3,6 +3,10 @@ import React from 'react';
 import NavMainItem from './NavMainItem';
 import NavUnextIcon from '../assets/NavUnextIcon';
 import NavHelpIcon from '../assets/NavHelpIcon';
+import NavHomeIcon from '../assets/NavHomeIcon';
+import NavVideoIcon from '../assets/NavVideoIcon';
+import NavBookIcon from '../assets/NavBookIcon';
+import NavOtherIcon from '../assets/NavOtherIcon';
 
 function NavbarContent() {
   return (
@@ -29,6 +33,20 @@ function NavbarContent() {
           </li>
         </ul>
       </div>
+      <ul>
+        <li className=" list-none mt-2 mb-4">
+          <NavMainItem title="ホーム" icon={<NavHomeIcon />} />
+        </li>
+        <li className=" list-none mt-2 mb-4">
+          <NavMainItem title="ビデオ" icon={<NavVideoIcon />} />
+        </li>
+        <li className=" list-none mt-2 mb-4">
+          <NavMainItem title="ブック" icon={<NavBookIcon />} />
+        </li>
+        <li className=" list-none mt-2 mb-4">
+          <NavMainItem title="その他♡" icon={<NavOtherIcon />} />
+        </li>
+      </ul>
     </div>
   );
 }
