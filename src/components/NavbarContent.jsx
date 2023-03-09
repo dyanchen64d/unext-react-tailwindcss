@@ -6,7 +6,7 @@ import NavSubItem from './NavSubItem';
 import { ReactComponent as HeaderUnext } from '../assets/header_unext.svg';
 import NavUnextIcon from '../assets/NavUnextIcon';
 import { ReactComponent as NavHelpIcon } from '../assets/nav_help.svg';
-import NavHomeIcon from '../assets/NavHomeIcon';
+import { ReactComponent as NavHomeIcon } from '../assets/nav_home.svg';
 import NavVideoIcon from '../assets/NavVideoIcon';
 import { ReactComponent as NavBookIcon } from '../assets/nav_book.svg';
 import NavOtherIcon from '../assets/NavOtherIcon';
