@@ -9,7 +9,7 @@ import { ReactComponent as NavHelpIcon } from '../assets/nav_help.svg';
 import { ReactComponent as NavHomeIcon } from '../assets/nav_home.svg';
 import NavVideoIcon from '../assets/NavVideoIcon';
 import { ReactComponent as NavBookIcon } from '../assets/nav_book.svg';
-import NavOtherIcon from '../assets/NavOtherIcon';
+import { ReactComponent as NavOtherIcon } from '../assets/nav_other.svg';
 
 const videosItems = [
   'ランキング',
