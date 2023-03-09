@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainUnextIcon from '../assets/MainUnextIcon';
+import { ReactComponent as MainUnextIcon } from '../assets/main_unext.svg';
 import { ReactComponent as MainUnextIconLarge } from '../assets/unext_large.svg';
 import { ReactComponent as TwitterIcon } from '../assets/twitter.svg';
 import { ReactComponent as FacebookIcon } from '../assets/facebook.svg';
@@ -9,7 +9,7 @@ function MainHeaderInfo() {
   return (
     <div className="main-header-info flex flex-col items-center">
       <div className=" mt-[102px] sm:hidden">
-        <MainUnextIcon />
+        <MainUnextIcon className="w-[72px]" />
       </div>
       <div className=" hidden mt-[154px] sm:block">
         <MainUnextIconLarge className="w-[286px] h-[54px]" />
