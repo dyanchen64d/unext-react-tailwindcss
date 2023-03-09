@@ -8,7 +8,7 @@ import NavUnextIcon from '../assets/NavUnextIcon';
 import NavHelpIcon from '../assets/NavHelpIcon';
 import NavHomeIcon from '../assets/NavHomeIcon';
 import NavVideoIcon from '../assets/NavVideoIcon';
-import NavBookIcon from '../assets/NavBookIcon';
+import { ReactComponent as NavBookIcon } from '../assets/nav_book.svg';
 import NavOtherIcon from '../assets/NavOtherIcon';
 
 const videosItems = [

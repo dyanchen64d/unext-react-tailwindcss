@@ -1,9 +1,4 @@
-import React from 'react';
-
-function NavBookIcon() {
-  return (
-    <div>
-      <svg viewBox="0 0 64 64" fill="none">
+<svg viewBox="0 0 64 64" fill="none">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -11,8 +6,3 @@ function NavBookIcon() {
           fill="currentColor"
         ></path>
       </svg>
-    </div>
-  );
-}
-
-export default NavBookIcon;
