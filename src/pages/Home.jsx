@@ -12,7 +12,7 @@ function Home() {
     <>
       <Header />
       <Navbar />
-      <main className=" box-border lg:ml-[256px] bg-main-bg relative">
+      <main className=" box-border lg:ml-[255px] bg-main-bg relative">
         <MainHeaderBgImage />
         <MainHeaderInfo />
         <div className="h-[2000px] box-border"></div>
