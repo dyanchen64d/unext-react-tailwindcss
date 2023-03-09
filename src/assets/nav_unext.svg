@@ -1,9 +1,4 @@
-import React from 'react';
-
-function NavUnextIcon() {
-  return (
-    <>
-      <svg viewBox="0 0 64 64" fill="none">
+<svg viewBox="0 0 64 64" fill="none">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -11,8 +6,3 @@ function NavUnextIcon() {
           fill="currentColor"
         ></path>
       </svg>
-    </>
-  );
-}
-
-export default NavUnextIcon;

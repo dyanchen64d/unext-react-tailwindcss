@@ -4,10 +4,10 @@ import NavMainItem from './NavMainItem';
 import NavSubItem from './NavSubItem';
 
 import { ReactComponent as HeaderUnext } from '../assets/header_unext.svg';
-import NavUnextIcon from '../assets/NavUnextIcon';
+import { ReactComponent as NavUnextIcon } from '../assets/nav_unext.svg';
 import { ReactComponent as NavHelpIcon } from '../assets/nav_help.svg';
 import { ReactComponent as NavHomeIcon } from '../assets/nav_home.svg';
-import NavVideoIcon from '../assets/NavVideoIcon';
+import { ReactComponent as NavVideoIcon } from '../assets/nav_video.svg';
 import { ReactComponent as NavBookIcon } from '../assets/nav_book.svg';
 import { ReactComponent as NavOtherIcon } from '../assets/nav_other.svg';
 
