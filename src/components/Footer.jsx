@@ -7,7 +7,7 @@ function Footer() {
       style={{ backgroundColor: 'rgb(15, 25, 38)' }}
     >
       <div className="py-5">
-        <div className="flex justify-center items-center py-[10px] px-[55px]">
+        <div className="flex justify-start items-center py-[10px] px-[55px]">
           <div
             className="pr-5 mr-5"
             style={{ borderRight: '1px solid rgba(255, 255, 255, 0.1)' }}
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div
-          className="flex justify-center items-center py-[10px] px-[55px]"
+          className="flex justify-start items-center py-[10px] px-[55px]"
           style={{ backgroundColor: 'rgb(15, 25, 38)' }}
         >
           <div
