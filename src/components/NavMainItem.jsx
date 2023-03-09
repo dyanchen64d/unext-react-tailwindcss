@@ -1,5 +1,5 @@
 import React from 'react';
-import NavItemArrow from '../assets/NavItemArrow';
+import { ReactComponent as NavItemArrow } from '../assets/nav_item_arrow.svg';
 
 function NavMainItem({ title, icon, isOpen }) {
   return (
