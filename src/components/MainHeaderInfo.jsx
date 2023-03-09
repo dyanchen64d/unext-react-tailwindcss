@@ -1,37 +1,41 @@
 import React from 'react';
 
 import MainUnextIcon from '../assets/MainUnextIcon';
+import { ReactComponent as MainUnextIconLarge } from '../assets/unext_large.svg';
 
 function MainHeaderInfo() {
   return (
     <div className="main-header-info flex flex-col items-center">
-      <div className=" mt-[102px]">
+      <div className=" mt-[102px] sm:hidden">
         <MainUnextIcon />
       </div>
-      <h1 className=" mt-4 text-xl text-white font-light">
+      <div className=" hidden mt-[154px] sm:block">
+        <MainUnextIconLarge className="w-[286px] h-[54px]" />
+      </div>
+      <h1 className=" mt-4 sm:mt-[42px] sm:font-bold text-xl sm:text-[28px] text-white font-light">
         観るのも読むのも、これひとつ。
       </h1>
       <p
-        className="mt-4 text-center w-[306px]"
-        style={{ color: 'rgba(255, 255, 255, 0.75)', fontSize: '13px' }}
+        className="mt-4 sm:mt-[28px] text-center w-[306px] text-[13px] sm:text-[17px] sm:w-[484px]"
+        style={{ color: 'rgba(255, 255, 255, 0.75)' }}
       >
         映画 / ドラマ /
         アニメから、マンガや雑誌といった電子書籍まで。U-NEXTひとつで楽しめます。
       </p>
-      <button className=" mt-8 w-[295px] h-[44px] bg-unext-blue rounded-sm flex justify-center items-center text-white font-bold text-sm">
+      <button className=" mt-8 w-[295px] sm:w-[360px] h-[44px] sm:h-[48px] bg-unext-blue rounded-sm flex justify-center items-center text-white font-bold text-sm">
         まず31日間 無料体験
       </button>
-      <button className="w-[122px] h-[44px] text-white mt-6 text-sm">
+      <button className="w-[122px] h-[44px] sm:h-auto text-white mt-6 text-sm">
         ログインはこちら
       </button>
-      <div className=" my-[40px]">
+      <div className=" my-[40px] sm:mt-[44px] sm:mb-[26px] sm:self-end sm:mr-[40px]">
         <p
           className="text-[13px] text-center"
           style={{ color: 'rgba(255, 255, 255, 0.5)' }}
         >
           キャンペーン・イチオシ作品の情報を発信中
         </p>
-        <div className="flex mt-4 gap-x-[24px]">
+        <div className="flex mt-[10px] gap-x-[24px] sm:gap-x-[8px]">
           <div
             className="w-[130px] h-[24px] rounded flex justify-center items-center"
             style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
