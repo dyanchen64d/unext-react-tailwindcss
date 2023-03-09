@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import HeaderUnext from '../assets/HeaderUnextSvg.jsx';
 import { HiMenu } from 'react-icons/hi';
 import { BiSearch } from 'react-icons/bi';
 import { useSelector, useDispatch } from 'react-redux';
 import { closeNav, openNav } from '../store/navSlice';
+
+import { ReactComponent as HeaderUnext } from '../assets/header_unext.svg';
 
 function Header() {
   const [showHeaderBg, setShowHeaderBg] = useState(false);

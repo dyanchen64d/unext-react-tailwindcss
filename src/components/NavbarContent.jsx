@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import NavMainItem from './NavMainItem';
 import NavSubItem from './NavSubItem';
 
-import HeaderUnext from '../assets/HeaderUnextSvg.jsx';
+import { ReactComponent as HeaderUnext } from '../assets/header_unext.svg';
 import NavUnextIcon from '../assets/NavUnextIcon';
 import NavHelpIcon from '../assets/NavHelpIcon';
 import NavHomeIcon from '../assets/NavHomeIcon';
