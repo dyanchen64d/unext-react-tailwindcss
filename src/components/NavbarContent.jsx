@@ -10,6 +10,7 @@ import { ReactComponent as NavHomeIcon } from '../assets/nav_home.svg';
 import { ReactComponent as NavVideoIcon } from '../assets/nav_video.svg';
 import { ReactComponent as NavBookIcon } from '../assets/nav_book.svg';
 import { ReactComponent as NavOtherIcon } from '../assets/nav_other.svg';
+import { ReactComponent as NavItemArrow } from '../assets/nav_item_arrow.svg';
 
 const videosItems = [
   'ランキング',
@@ -117,6 +118,28 @@ function NavbarContent() {
           <NavMainItem title="その他♡" icon={<NavOtherIcon />} />
         </li>
       </ul>
+      <div
+        className="absolute bottom-0 left-0 w-full p-[19px] pl-[32px] box-border text-[13px]"
+        style={{
+          backgroundColor: 'rgb(20, 30, 43)',
+          borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+        }}
+      >
+        <li
+          className="list-none mb-[6px] flex justify-between items-center"
+          style={{ color: 'rgba(255, 255, 255, 0.5)' }}
+        >
+          U-NEXTの特長
+          <NavItemArrow className="w-[20px] h-[20px] rotate-90" />
+        </li>
+        <li
+          className="list-none flex justify-between items-center"
+          style={{ color: 'rgba(255, 255, 255, 0.5)' }}
+        >
+          SMART USEN
+          <NavItemArrow className="w-[20px] h-[20px] rotate-90" />
+        </li>
+      </div>
     </div>
   );
 }
