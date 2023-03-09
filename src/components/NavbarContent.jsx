@@ -49,7 +49,7 @@ function NavbarContent() {
       <div className=" mb-[16px] lg:pt-[32px]">
         <div className="w-full flex flex-col items-center mb-[38px]">
           <a href="#">
-            <div className=" bg-nav-register text-white w-[200px] h-[48px] rounded-lg flex items-center justify-center text-lg font-bold mt-[8px]">
+            <div className=" bg-unext-blue text-white w-[200px] h-[48px] rounded-lg flex items-center justify-center text-lg font-bold mt-[8px]">
               無料でお試し
             </div>
           </a>

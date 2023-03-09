@@ -8,8 +8,9 @@ module.exports = {
       },
       colors: {
         'nav-text': 'rgba(255, 255, 255, 0.75)',
-        'nav-register': 'rgb(0, 128, 222)',
+        'unext-blue': 'rgb(0, 128, 222)',
         'nav-login': 'rgba(255, 255, 255, 0.05)',
+        'main-bg': 'rgb(0, 10, 23)',
       },
       transitionProperty: {
         height: 'height',
