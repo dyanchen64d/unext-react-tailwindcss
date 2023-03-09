@@ -7,7 +7,7 @@ import { ReactComponent as FacebookIcon } from '../assets/facebook.svg';
 
 function MainHeaderInfo() {
   return (
-    <div className="main-header-info flex flex-col items-center">
+    <div className="main-header-info flex flex-col items-center relative">
       <div className=" mt-[102px] sm:hidden">
         <MainUnextIcon className="w-[72px]" />
       </div>

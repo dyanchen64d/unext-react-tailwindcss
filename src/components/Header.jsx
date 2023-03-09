@@ -33,7 +33,7 @@ function Header() {
     <div
       className={`fixed top-0 left-0 items-center justify-center  w-full h-[56px] ${
         showHeaderBg ? 'bg-slate-800' : 'bg-transparent'
-      }  flex transition-colors`}
+      }  flex transition-colors z-10`}
     >
       <div
         className="absolute top-0 left-0 menu-wrapper w-[56px] h-[56px] flex justify-center items-center lg:hidden"
