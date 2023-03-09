@@ -11,7 +11,7 @@ function Home() {
     <>
       <Header />
       <Navbar />
-      <main className="app-main lg:ml-[256px] bg-main-bg">
+      <main className="lg:ml-[256px] bg-main-bg">
         <div className="main-header">
           <div className="main-header-bg"></div>
           <MainHeaderInfo />
