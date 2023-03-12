@@ -7,8 +7,6 @@ import React, {
 } from 'react';
 
 function Slider({ items, title, subtitle, containerWidth }) {
-  const { url } = items;
-
   const [sliderIdx, setSliderIdx] = useState(0);
   const [countPerSlider, setCountPerSlider] = useState(2);
 
@@ -59,8 +57,15 @@ function Slider({ items, title, subtitle, containerWidth }) {
 
   return (
     <div className="w-full" ref={ref}>
-      <div className="title"></div>
-      <div className="subtitle"></div>
+      <div className="title text-white font-bold text-[17px] px-[33px] sm:px-[60px] mb-2">
+        {title}
+      </div>
+      <div
+        className="subtitle text-[13px] sm:text-[15px] mb-[16px] sm:mb-6 px-[33px] sm:px-[60px]"
+        style={{ color: 'rgba(255, 255, 255, 0.5)' }}
+      >
+        {subtitle}
+      </div>
       <div className="w-full overflow-hidden flex">
         <div
           className="left-handler min-w-[21px] sm:min-w-[48px] transition transition-text bg-slider-handler hover:bg-slider-handler-hover mr-[6px] cursor-pointer z-10 flex justify-center items-center text-white text-xl hover:text-3xl"
@@ -81,9 +86,10 @@ function Slider({ items, title, subtitle, containerWidth }) {
                 minWidth: `${100 / countPerSlider}%`,
               }}
             >
-              <div className="w-full h-full bg-teal-700 aspect-video flex items-center justify-center text-white text-lg">
-                {idx}
-              </div>
+              <div
+                className="w-full h-full aspect-video flex items-center justify-center text-white text-lg bg-contain"
+                style={{ backgroundImage: `url('${item.url}')` }}
+              ></div>
             </div>
           ))}
         </div>

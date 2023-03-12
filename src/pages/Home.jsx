@@ -55,7 +55,12 @@ function Home() {
       >
         <MainHeaderBgImage />
         <MainHeaderInfo />
-        <Slider items={data} containerWidth={containerWidth} />
+        <Slider
+          items={data}
+          containerWidth={containerWidth}
+          title="スタッフおすすめ見放題傑作選！"
+          subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
+        />
         <div className="h-[2000px] box-border"></div>
       </main>
       <Footer />
