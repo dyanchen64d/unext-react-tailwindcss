@@ -50,7 +50,7 @@ function Home() {
       <Header />
       <Navbar />
       <main
-        className=" box-border lg:ml-[255px] bg-main-bg relative"
+        className=" box-border lg:ml-[255px] bg-main-bg relative pb-[50px]"
         ref={mainRef}
       >
         <MainHeaderBgImage />
@@ -61,7 +61,54 @@ function Home() {
           title="スタッフおすすめ見放題傑作選！"
           subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
         />
-        <div className="h-[2000px] box-border"></div>
+        <Slider
+          items={data}
+          containerWidth={containerWidth}
+          title="スタッフおすすめ見放題傑作選！"
+          subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
+        />
+        <Slider
+          items={data}
+          containerWidth={containerWidth}
+          title="スタッフおすすめ見放題傑作選！"
+          subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
+        />
+        <Slider
+          items={data}
+          containerWidth={containerWidth}
+          title="スタッフおすすめ見放題傑作選！"
+          subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
+        />
+        <Slider
+          items={data}
+          containerWidth={containerWidth}
+          title="スタッフおすすめ見放題傑作選！"
+          subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
+        />
+        <Slider
+          items={data}
+          containerWidth={containerWidth}
+          title="スタッフおすすめ見放題傑作選！"
+          subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
+        />
+        <Slider
+          items={data}
+          containerWidth={containerWidth}
+          title="スタッフおすすめ見放題傑作選！"
+          subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
+        />
+        <Slider
+          items={data}
+          containerWidth={containerWidth}
+          title="スタッフおすすめ見放題傑作選！"
+          subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
+        />
+        <Slider
+          items={data}
+          containerWidth={containerWidth}
+          title="スタッフおすすめ見放題傑作選！"
+          subtitle="見放題でこんなに楽しめる！各ジャンルから選りすぐりの名作、傑作、話題の新着をピックアップ。"
+        />
       </main>
       <Footer />
     </>

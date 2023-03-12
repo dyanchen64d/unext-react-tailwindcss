@@ -56,7 +56,7 @@ function Slider({ items, title, subtitle, containerWidth }) {
   }, [sliderIdx, countPerSlider]);
 
   return (
-    <div className="w-full" ref={ref}>
+    <div className="w-full mb-[48px]" ref={ref}>
       <div className="title text-white font-bold text-[17px] px-[33px] sm:px-[60px] mb-2">
         {title}
       </div>
