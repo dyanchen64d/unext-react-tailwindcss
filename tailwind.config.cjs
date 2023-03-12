@@ -11,9 +11,12 @@ module.exports = {
         'unext-blue': 'rgb(0, 128, 222)',
         'nav-login': 'rgba(255, 255, 255, 0.05)',
         'main-bg': 'rgb(0, 10, 23)',
+        'slider-handler': 'rgba(1, 6, 13, 0.3)',
+        'slider-handler-hover': 'rgba(1, 6, 13, 0.75)',
       },
       transitionProperty: {
         height: 'height',
+        text: 'font-size',
       },
     },
     screens: {
