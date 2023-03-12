@@ -4,7 +4,7 @@ function Slider({ items, title, subtitle, containerWidth }) {
   const { url } = items;
 
   const [sliderIdx, setSliderIdx] = useState(0);
-  const [itemWidth, setItemWidth] = useState('50%');
+  const [itemCount, setItemCount] = useState(2);
 
   const ref = useRef();
 
@@ -29,16 +29,16 @@ function Slider({ items, title, subtitle, containerWidth }) {
     const wInt = parseInt(w);
 
     if (wInt <= 900) {
-      setItemWidth('50%');
+      setItemCount(2);
       return;
     }
 
     if (wInt <= 1167) {
-      setItemWidth(`${100 / 3}%`);
+      setItemCount(3);
       return;
     }
 
-    setItemWidth(`${100 / 4}%`);
+    setItemCount(4);
   }, [containerWidth]);
 
   return (
@@ -47,7 +47,7 @@ function Slider({ items, title, subtitle, containerWidth }) {
       <div className="subtitle"></div>
       <div className="w-full overflow-hidden flex">
         <div
-          className="left-handler min-w-[21px] transition transition-text bg-slider-handler hover:bg-slider-handler-hover mr-[6px] cursor-pointer z-10 flex justify-center items-center text-white text-xl hover:text-3xl"
+          className="left-handler min-w-[21px] sm:min-w-[48px] transition transition-text bg-slider-handler hover:bg-slider-handler-hover mr-[6px] cursor-pointer z-10 flex justify-center items-center text-white text-xl hover:text-3xl"
           onClick={() => leftHandler(sliderIdx - 1)}
         >
           <span>&#8249;</span>
@@ -60,7 +60,10 @@ function Slider({ items, title, subtitle, containerWidth }) {
             <div
               key={idx}
               className=" px-[6px]"
-              style={{ width: itemWidth, minWidth: itemWidth }}
+              style={{
+                width: `${100 / itemCount}%`,
+                minWidth: `${100 / itemCount}%`,
+              }}
             >
               <div className="w-full h-full bg-teal-700 aspect-video flex items-center justify-center text-white text-lg">
                 {idx}
@@ -69,7 +72,7 @@ function Slider({ items, title, subtitle, containerWidth }) {
           ))}
         </div>
         <div
-          className="right-handler min-w-[21px] transition transition-text bg-slider-handler hover:bg-slider-handler-hover ml-[6px] cursor-pointer z-10 flex justify-center items-center text-white text-xl hover:text-3xl"
+          className="right-handler min-w-[21px] sm:min-w-[48px] transition transition-text bg-slider-handler hover:bg-slider-handler-hover ml-[6px] cursor-pointer z-10 flex justify-center items-center text-white text-xl hover:text-3xl"
           onClick={() => rightHandler(sliderIdx + 1)}
         >
           <span>&#8250;</span>
