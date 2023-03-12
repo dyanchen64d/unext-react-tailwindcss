@@ -27,11 +27,18 @@ function Slider({ items, title, subtitle, containerWidth }) {
   useEffect(() => {
     const w = containerWidth.slice(0, containerWidth.length - 2);
     const wInt = parseInt(w);
+
     if (wInt <= 900) {
       setItemWidth('50%');
-    } else {
-      setItemWidth(`${100 / 3}%`);
+      return;
     }
+
+    if (wInt <= 1167) {
+      setItemWidth(`${100 / 3}%`);
+      return;
+    }
+
+    setItemWidth(`${100 / 4}%`);
   }, [containerWidth]);
 
   return (
