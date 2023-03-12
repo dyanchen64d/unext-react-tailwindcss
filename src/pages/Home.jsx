@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
@@ -27,14 +27,35 @@ const data = [
 ];
 
 function Home() {
+  const mainRef = useRef();
+
+  const [containerWidth, setContainerWidth] = useState('');
+
+  useEffect(() => {
+    const onResize = () => {
+      const { width } = getComputedStyle(mainRef.current);
+      setContainerWidth(width);
+    };
+
+    onResize();
+
+    addEventListener('resize', onResize);
+    return () => {
+      removeEventListener('resize', onResize);
+    };
+  }, []);
+
   return (
     <>
       <Header />
       <Navbar />
-      <main className=" box-border lg:ml-[255px] bg-main-bg relative">
+      <main
+        className=" box-border lg:ml-[255px] bg-main-bg relative"
+        ref={mainRef}
+      >
         <MainHeaderBgImage />
         <MainHeaderInfo />
-        <Slider itemWidth="50%" items={data} />
+        <Slider items={data} containerWidth={containerWidth} />
         <div className="h-[2000px] box-border"></div>
       </main>
       <Footer />

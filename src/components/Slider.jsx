@@ -1,11 +1,12 @@
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useState, useRef } from 'react';
 
-function Slider({ items, title, subtitle, itemWidth }) {
+function Slider({ items, title, subtitle, containerWidth }) {
   const { url } = items;
 
   const [sliderIdx, setSliderIdx] = useState(0);
+  const [itemWidth, setItemWidth] = useState('50%');
 
-  // const sliderIdx = useRef(0);
+  const ref = useRef();
 
   const leftHandler = useCallback(
     (idx) => {
@@ -23,8 +24,18 @@ function Slider({ items, title, subtitle, itemWidth }) {
     [setSliderIdx]
   );
 
+  useEffect(() => {
+    const w = containerWidth.slice(0, containerWidth.length - 2);
+    const wInt = parseInt(w);
+    if (wInt <= 900) {
+      setItemWidth('50%');
+    } else {
+      setItemWidth(`${100 / 3}%`);
+    }
+  }, [containerWidth]);
+
   return (
-    <div className="w-full">
+    <div className="w-full" ref={ref}>
       <div className="title"></div>
       <div className="subtitle"></div>
       <div className="w-full overflow-hidden flex">
