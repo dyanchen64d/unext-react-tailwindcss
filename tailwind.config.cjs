@@ -13,10 +13,13 @@ module.exports = {
         'main-bg': 'rgb(0, 10, 23)',
         'slider-handler': 'rgba(1, 6, 13, 0.3)',
         'slider-handler-hover': 'rgba(1, 6, 13, 0.75)',
+        'search-input': 'rgb(35, 45, 58)',
+        'search-placeholder': 'rgb(117, 117, 117)',
       },
       transitionProperty: {
         height: 'height',
         text: 'font-size',
+        background: 'background',
       },
     },
     screens: {
