@@ -123,6 +123,15 @@ function Home() {
             key={idx}
           />
         ))}
+        {d.map((data, idx) => (
+          <Slider
+            items={data.items}
+            containerWidth={containerWidth}
+            title={data.title}
+            subtitle={data.subtitle}
+            key={idx}
+          />
+        ))}
       </main>
       <Footer />
     </>
