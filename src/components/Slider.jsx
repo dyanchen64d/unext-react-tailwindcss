@@ -68,7 +68,7 @@ function Slider({ items, title, subtitle, containerWidth }) {
       </div>
       <div className="w-full overflow-hidden flex">
         <div
-          className="left-handler min-w-[21px] sm:min-w-[48px] transition transition-text bg-slider-handler hover:bg-slider-handler-hover mr-[6px] cursor-pointer z-10 flex justify-center items-center text-white text-xl hover:text-3xl"
+          className="left-handler min-w-[21px] sm:min-w-[48px] transition transition-text bg-slider-handler hover:bg-slider-handler-hover mr-[6px] cursor-pointer z-0 flex justify-center items-center text-white text-xl hover:text-3xl"
           onClick={() => leftHandler(sliderIdx, countPerSlider)}
         >
           <span>&#8249;</span>
@@ -94,7 +94,7 @@ function Slider({ items, title, subtitle, containerWidth }) {
           ))}
         </div>
         <div
-          className="right-handler min-w-[21px] sm:min-w-[48px] transition transition-text bg-slider-handler hover:bg-slider-handler-hover ml-[6px] cursor-pointer z-10 flex justify-center items-center text-white text-xl hover:text-3xl"
+          className="right-handler min-w-[21px] sm:min-w-[48px] transition transition-text bg-slider-handler hover:bg-slider-handler-hover ml-[6px] cursor-pointer z-0 flex justify-center items-center text-white text-xl hover:text-3xl"
           onClick={() => rightHandler(sliderIdx, countPerSlider)}
         >
           <span>&#8250;</span>

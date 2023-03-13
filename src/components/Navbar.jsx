@@ -30,7 +30,7 @@ function Navbar() {
       >
         <NavbarContent />
       </div>
-      <div className="hidden lg:block lg:fixed lg:z-30 lg:z-10 top-0 left-0 h-screen w-[256px] ">
+      <div className="hidden lg:block lg:fixed lg:z-10 top-0 left-0 h-screen w-[256px] ">
         <NavbarContent />
       </div>
     </>
