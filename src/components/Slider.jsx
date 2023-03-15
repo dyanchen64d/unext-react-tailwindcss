@@ -51,6 +51,12 @@ function Slider({ items, title, subtitle, containerWidth }) {
     setCountPerSlider(4);
   }, [containerWidth]);
 
+  useEffect(() => {
+    if (sliderIdx + countPerSlider > items.length) {
+      setSliderIdx(items.length - countPerSlider);
+    }
+  }, [containerWidth, sliderIdx, countPerSlider]);
+
   const translateX = useMemo(() => {
     return (100 / countPerSlider) * sliderIdx;
   }, [sliderIdx, countPerSlider]);
