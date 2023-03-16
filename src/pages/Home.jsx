@@ -31,7 +31,7 @@ function Home() {
   useEffect(() => {
     const node = mainRef.current.children;
     const lastNode = node[node.length - 1];
-    // console.log('mainRef.current.children', lastNode);
+    // console.log('mainRef.current.children', node);
     setLastNode(lastNode);
   }, [data]);
 

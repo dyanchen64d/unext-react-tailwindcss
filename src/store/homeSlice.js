@@ -86,6 +86,8 @@ export const homeSlice = createSlice({
   initialState,
   reducers: {
     updateData: (state) => {
+      // console.log('state.data', state.data.length);
+      if (state.data.length > 50) return;
       state.data = [...state.data, ...data];
     },
   },
