@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { memo, useState } from 'react';
 
 import NavMainItem from './NavMainItem';
 import NavSubItem from './NavSubItem';
@@ -144,4 +144,4 @@ function NavbarContent() {
   );
 }
 
-export default NavbarContent;
+export default memo(NavbarContent);

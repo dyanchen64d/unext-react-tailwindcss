@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import { HiMenu } from 'react-icons/hi';
 import { BiSearch } from 'react-icons/bi';
 import { useSelector, useDispatch } from 'react-redux';
@@ -64,4 +64,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default memo(Header);

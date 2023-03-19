@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { closeNav } from '../store/navSlice';
 import NavbarContent from './NavbarContent';
+import useBodyScrollLock from '../hooks/useBodyScrollLock';
 
 function Navbar() {
   const { isOpen } = useSelector((state) => state.nav);
@@ -9,6 +10,8 @@ function Navbar() {
   const dispatch = useDispatch();
 
   const bg = useRef();
+
+  useBodyScrollLock();
 
   const bgClickHandler = () => {
     dispatch(closeNav());
